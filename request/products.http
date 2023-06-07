@@ -1,0 +1,33 @@
+@api = http://localhost:3000/products
+
+### Get all products
+GET {{api}}
+
+### Insert product
+POST {{api}}
+Content-Type: application/json
+
+{
+    "Name": "Cables HDMI",
+    "Description": "De 10 pies",
+    "Quantity": 20
+}
+
+### get a product by id
+GET {{api}}/9
+
+### delete product by id
+DELETE {{api}}/8
+
+### get count of products
+GET {{api}}/count
+
+### update a product by id
+PUT {{api}}/9
+Content-Type: application/json
+
+{
+    "Name": "Cables HDMI 2.0",
+    "Description": "De 15 pies",
+    "Quantity": 60
+}
